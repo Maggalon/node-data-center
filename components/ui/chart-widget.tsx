@@ -36,7 +36,6 @@ export default function DataCenterWidget({ rawData }: ChartProps) {
     const slicedObject: ChartGroup = Object.fromEntries(
         Object.entries(sortedData).slice(0, 6)
     );
-    console.log(data);
     setData(sortedData)
     setSlicedData(slicedObject)
     setTotalValue(rawData.length)
